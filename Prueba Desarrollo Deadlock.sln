@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba Desarrollo Deadlock", "Prueba Desarrollo Deadlock\Prueba Desarrollo Deadlock.csproj", "{6D540E68-8A3D-4E3A-914A-8BD8CD2200F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaDesarrolloDeadlockCore", "PruebaDesarrolloDeadlockCore\PruebaDesarrolloDeadlockCore.csproj", "{246EF47A-30A0-4022-98A3-F27E9B30894A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D540E68-8A3D-4E3A-914A-8BD8CD2200F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D540E68-8A3D-4E3A-914A-8BD8CD2200F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D540E68-8A3D-4E3A-914A-8BD8CD2200F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D540E68-8A3D-4E3A-914A-8BD8CD2200F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246EF47A-30A0-4022-98A3-F27E9B30894A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246EF47A-30A0-4022-98A3-F27E9B30894A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246EF47A-30A0-4022-98A3-F27E9B30894A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246EF47A-30A0-4022-98A3-F27E9B30894A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC6EAFF7-4E51-4772-B2D9-A2F0A5D90292}
+	EndGlobalSection
+EndGlobal

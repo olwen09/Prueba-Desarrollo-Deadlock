@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Prueba_Desarrollo_Deadlock</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
+    <!-- MATERIALIZE -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>Prueba Desarrollo Deadlock</title>
+
+  
+    <link rel="manifest" href="~/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="~/js/pace.min.js"></script>
+    <link href="~/css/pace.css" rel="stylesheet" />
+ 
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/vendors/flag-icon/css/flag-icon.min.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/themes/horizontal-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/themes/horizontal-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/layouts/style-horizontal.css">
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="~/app-assets/css/custom/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="~/lib/jquery-confirm/dist/jquery-confirm.min.css" rel="stylesheet" />
+    <!-- END: Custom CSS-->
+    <base href="/">
+    @RenderSection("Style", false)
+
+    <!-- MATERIALIZE END -->
+
+<title>@ViewData["Title"] - Prueba Desarrollo Deadlock </title>
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Prueba_Desarrollo_Deadlock</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Empleado" asp-action="Index">Empleados</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Posicion" asp-action="Index">Posicion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    @RenderSection("Scripts", required: false)
+
+
+    @section Scripts{
+        <script src="~/app-assets/js/particles.js"></script>
+        <script src="~/app-assets/js/particles.init.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+        <script src="~/lib/jquery-confirm/dist/jquery-confirm.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.js-example-basic-single').select2({
+                    placeholder: "Select a state",
+                });
+
+
+            });
+
+
+
+        </script>
+    }
+</body>
+</html>
